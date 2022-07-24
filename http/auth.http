@@ -1,0 +1,18 @@
+###  Sign Up
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+  "username": "john doe",
+  "email": "john177@gmail.com",
+  "password": "pass"
+}
+
+###  Login in
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+  "username": "john doe",
+  "password": "pass"
+}

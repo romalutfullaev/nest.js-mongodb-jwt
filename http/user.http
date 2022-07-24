@@ -1,0 +1,33 @@
+###  Create User
+POST http://localhost:3000/user/
+Content-Type: application/json
+
+{
+  "username": "john doe",
+  "email": "john177@gmail.com",
+  "password": "pass"
+}
+
+
+###  Get all Users
+GET http://localhost:3000/users/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MmRkODExOWI5YTIzMGQ3MjViZWZjZjUiLCJ1c2VybmFtZSI6ImpvaG4gZG9lIiwiaWF0IjoxNjU4Njg1MjIwLCJleHAiOjE2NTg2ODUyMzV9.yaD-Dr1W9WeRIZr4ShRmYsB8sZisnFAzflTFSiFefsc
+
+
+###  Update User data
+PATCH http://localhost:3000/users/id
+Content-Type: application/json
+Authorization: Bearer
+
+{
+  "username": "John",
+  "email": "johndoe@gmail.com",
+  "password": "password"
+}
+
+
+###  Delete User
+DELETE http://localhost:3000/users/id
+Content-Type: application/json
+Authorization: Bearer
